@@ -4,7 +4,7 @@ nome: Razão e taxa
 dominio: "Razão, proporção e porcentagem"
 pre_requisitos: [fracao_numero, divisao]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

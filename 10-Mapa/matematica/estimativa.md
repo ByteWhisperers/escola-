@@ -4,7 +4,7 @@ nome: Arredondamento e estimativa
 dominio: Número e valor posicional
 pre_requisitos: [valor_posicional]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

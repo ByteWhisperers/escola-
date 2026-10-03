@@ -4,7 +4,7 @@ nome: Área e sua ligação com a multiplicação
 dominio: Geometria e medida (apoio)
 pre_requisitos: [multiplicacao]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

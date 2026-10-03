@@ -4,7 +4,7 @@ nome: Números negativos e a reta numérica
 dominio: Números negativos e reais
 pre_requisitos: [fracao_numero]
 limiar: true
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

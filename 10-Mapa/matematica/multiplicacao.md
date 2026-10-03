@@ -4,15 +4,15 @@ nome: Significado da multiplicação
 dominio: Operações com números naturais
 pre_requisitos: [adicao_subtracao]
 limiar: false
-estado: bloqueado
-etapa:
+estado: dominado
+etapa: dialetica
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
 explicou: false
-dominado_em:
-proxima_revisao:
-intervalo_dias:
-inferido_no_diagnostico: false
+dominado_em: 2026-10-03
+proxima_revisao: 2026-10-13
+intervalo_dias: 1
+inferido_no_diagnostico: true
 openstax: PA 1
 common_core: [3.OA.A]
 ---

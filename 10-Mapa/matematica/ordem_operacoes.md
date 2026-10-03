@@ -4,7 +4,7 @@ nome: Expressões numéricas e ordem das operações
 dominio: Operações com números naturais
 pre_requisitos: [propriedades]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

@@ -4,7 +4,7 @@ nome: Decimais e valor posicional decimal
 dominio: Frações e decimais
 pre_requisitos: [valor_posicional, fracoes_equivalentes]
 limiar: true
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

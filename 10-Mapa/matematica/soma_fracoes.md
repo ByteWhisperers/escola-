@@ -4,7 +4,7 @@ nome: Somar e subtrair frações
 dominio: Frações e decimais
 pre_requisitos: [fracoes_equivalentes]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

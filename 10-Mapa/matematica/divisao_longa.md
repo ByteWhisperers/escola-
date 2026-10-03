@@ -4,7 +4,7 @@ nome: Divisão com vários dígitos
 dominio: Operações com números naturais
 pre_requisitos: [divisao, mult_varios_digitos]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

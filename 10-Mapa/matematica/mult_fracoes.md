@@ -4,15 +4,15 @@ nome: Multiplicar frações
 dominio: Frações e decimais
 pre_requisitos: [fracoes_equivalentes, mult_varios_digitos]
 limiar: false
-estado: bloqueado
-etapa:
+estado: dominado
+etapa: dialetica
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
 explicou: false
-dominado_em:
-proxima_revisao:
-intervalo_dias:
-inferido_no_diagnostico: false
+dominado_em: 2026-10-03
+proxima_revisao: 2026-10-17
+intervalo_dias: 1
+inferido_no_diagnostico: true
 openstax: PA 4
 common_core: [4.NF.B, 5.NF.B]
 ---

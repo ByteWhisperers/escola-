@@ -4,15 +4,15 @@ nome: Fração como número na reta
 dominio: Frações e decimais
 pre_requisitos: [fracao_unitaria]
 limiar: true
-estado: bloqueado
-etapa:
+estado: dominado
+etapa: dialetica
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
 explicou: false
-dominado_em:
-proxima_revisao:
-intervalo_dias:
-inferido_no_diagnostico: false
+dominado_em: 2026-10-03
+proxima_revisao: 2026-10-10
+intervalo_dias: 1
+inferido_no_diagnostico: true
 openstax: PA 4
 common_core: [3.NF.A]
 ---
