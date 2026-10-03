@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python 90-Sistema/scripts/estado.py painel"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python 90-Sistema/scripts/estado.py:*)",
+      "Bash(python -m unittest:*)"
+    ]
+  }
+}

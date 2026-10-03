@@ -1,0 +1,1269 @@
+{
+  "nome": "Mapa de conceitos de Matemática: fundamentos até álgebra",
+  "versao": "0.1",
+  "data": "2026-10-02",
+  "criterio_dominio": "Dominado quando o aluno resolve 3 problemas novos sem ajuda, em pelo menos 2 dias diferentes, e explica o raciocínio de 1 deles em voz alta ou por escrito.",
+  "estados_possiveis": [
+    "nao_visto",
+    "em_estudo",
+    "dominado",
+    "revisar"
+  ],
+  "fontes": {
+    "pre_requisitos": "Achieve the Core, Coherence Map (https://achievethecore.org/coherence-map/)",
+    "capitulos": "OpenStax Prealgebra 2e (PA) e Elementary Algebra 2e (EA)",
+    "limiares": "OpenAlex; ver campo limiar de cada conceito"
+  },
+  "dominios": {
+    "N": "Número e valor posicional",
+    "O": "Operações com números naturais",
+    "F": "Frações e decimais",
+    "R": "Razão, proporção e porcentagem",
+    "I": "Números negativos e reais",
+    "G": "Geometria e medida (apoio)",
+    "E": "Expressões e equações",
+    "FN": "Funções e gráficos",
+    "P": "Potências e polinômios"
+  },
+  "agenda_revisao": "Sugestão inicial, a ajustar com os dados: revisar 1, 3, 7, 21 e 60 dias depois do domínio. Cepeda e outros (2006) mostram que o melhor intervalo cresce com o tempo que se quer reter.",
+  "conceitos": [
+    {
+      "id": "valor_posicional",
+      "nome": "Valor posicional",
+      "dominio": "N",
+      "descricao": "O valor de um algarismo depende da posição; cada posição vale 10 vezes a da direita",
+      "common_core": [
+        "4.NBT.A"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [],
+      "apoio_das_ligacoes": {},
+      "nivel": 1,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "estimativa",
+      "nome": "Arredondamento e estimativa",
+      "dominio": "N",
+      "descricao": "Arredondar e estimar para checar se um resultado faz sentido",
+      "common_core": [
+        "3.NBT.A",
+        "4.NBT.A"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "valor_posicional"
+      ],
+      "apoio_das_ligacoes": {
+        "valor_posicional": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 2,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "adicao_subtracao",
+      "nome": "Adição e subtração com vários dígitos",
+      "dominio": "O",
+      "descricao": "Somar e subtrair usando valor posicional e reagrupamento",
+      "common_core": [
+        "4.NBT.B"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "valor_posicional"
+      ],
+      "apoio_das_ligacoes": {
+        "valor_posicional": "coherence_map"
+      },
+      "nivel": 2,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "multiplicacao",
+      "nome": "Significado da multiplicação",
+      "dominio": "O",
+      "descricao": "Multiplicação como grupos iguais, área e comparação",
+      "common_core": [
+        "3.OA.A"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "adicao_subtracao"
+      ],
+      "apoio_das_ligacoes": {
+        "adicao_subtracao": "julgamento_a_revisar"
+      },
+      "nivel": 3,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "propriedades",
+      "nome": "Propriedades das operações",
+      "dominio": "O",
+      "descricao": "Comutativa, associativa e distributiva como ferramentas de cálculo",
+      "common_core": [
+        "3.OA.B"
+      ],
+      "openstax": "PA 7",
+      "pre_requisitos": [
+        "multiplicacao"
+      ],
+      "apoio_das_ligacoes": {
+        "multiplicacao": "coherence_map"
+      },
+      "nivel": 4,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "divisao",
+      "nome": "Significado da divisão",
+      "dominio": "O",
+      "descricao": "Divisão como partilha e como medida; inversa da multiplicação",
+      "common_core": [
+        "3.OA.A",
+        "3.OA.B"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "multiplicacao"
+      ],
+      "apoio_das_ligacoes": {
+        "multiplicacao": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 4,
+      "limiar": {
+        "estudo": "Siegler, Duncan e Davis-Kean, 2012",
+        "link": "https://doi.org/10.1177/0956797612440101",
+        "porque": "Saber divisão no fundamental prevê álgebra e desempenho geral no ensino médio, mesmo controlando QI, memória e renda"
+      },
+      "ponte": null
+    },
+    {
+      "id": "area",
+      "nome": "Área e sua ligação com a multiplicação",
+      "dominio": "G",
+      "descricao": "Área de retângulos como produto dos lados",
+      "common_core": [
+        "3.MD.C"
+      ],
+      "openstax": "PA 9",
+      "pre_requisitos": [
+        "multiplicacao"
+      ],
+      "apoio_das_ligacoes": {
+        "multiplicacao": "julgamento_a_revisar"
+      },
+      "nivel": 4,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "mult_varios_digitos",
+      "nome": "Multiplicação com vários dígitos",
+      "dominio": "O",
+      "descricao": "Algoritmo da multiplicação explicado pelo valor posicional e pela distributiva",
+      "common_core": [
+        "4.NBT.B",
+        "5.NBT.B"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "multiplicacao",
+        "propriedades",
+        "valor_posicional"
+      ],
+      "apoio_das_ligacoes": {
+        "multiplicacao": "coherence_map",
+        "propriedades": "coherence_map",
+        "valor_posicional": "coherence_map"
+      },
+      "nivel": 5,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "ordem_operacoes",
+      "nome": "Expressões numéricas e ordem das operações",
+      "dominio": "O",
+      "descricao": "Ler e calcular expressões com parênteses e várias operações",
+      "common_core": [
+        "5.OA.A"
+      ],
+      "openstax": "PA 2",
+      "pre_requisitos": [
+        "propriedades"
+      ],
+      "apoio_das_ligacoes": {
+        "propriedades": "julgamento_a_revisar"
+      },
+      "nivel": 5,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "fatores_multiplos",
+      "nome": "Fatores, múltiplos e primos",
+      "dominio": "O",
+      "descricao": "Divisores, múltiplos, MDC, MMC e fatoração em primos",
+      "common_core": [
+        "4.OA.B",
+        "6.NS.B"
+      ],
+      "openstax": "PA 2",
+      "pre_requisitos": [
+        "divisao"
+      ],
+      "apoio_das_ligacoes": {
+        "divisao": "coherence_map"
+      },
+      "nivel": 5,
+      "limiar": null,
+      "ponte": "Engrenagens e ciclos que se repetem (calendários)"
+    },
+    {
+      "id": "fracao_unitaria",
+      "nome": "Fração unitária",
+      "dominio": "F",
+      "descricao": "1/b como uma parte de um todo dividido em b partes iguais",
+      "common_core": [
+        "3.NF.A"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "divisao"
+      ],
+      "apoio_das_ligacoes": {
+        "divisao": "julgamento_a_revisar"
+      },
+      "nivel": 5,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "divisao_longa",
+      "nome": "Divisão com vários dígitos",
+      "dominio": "O",
+      "descricao": "Algoritmo da divisão, quociente e resto",
+      "common_core": [
+        "4.NBT.B",
+        "5.NBT.B",
+        "6.NS.B"
+      ],
+      "openstax": "PA 1",
+      "pre_requisitos": [
+        "divisao",
+        "mult_varios_digitos"
+      ],
+      "apoio_das_ligacoes": {
+        "divisao": "coherence_map",
+        "mult_varios_digitos": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 6,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "linguagem_algebra",
+      "nome": "Linguagem da álgebra",
+      "dominio": "E",
+      "descricao": "Escrever e ler expressões com letras",
+      "common_core": [
+        "6.EE.A"
+      ],
+      "openstax": "PA 2; EA 1",
+      "pre_requisitos": [
+        "ordem_operacoes"
+      ],
+      "apoio_das_ligacoes": {
+        "ordem_operacoes": "coherence_map"
+      },
+      "nivel": 6,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "sinal_igual",
+      "nome": "Sinal de igual como equivalência",
+      "dominio": "E",
+      "descricao": "= significa 'mesmo valor dos dois lados', não 'o resultado é'",
+      "common_core": [
+        "6.EE.B"
+      ],
+      "openstax": "PA 2",
+      "pre_requisitos": [
+        "ordem_operacoes"
+      ],
+      "apoio_das_ligacoes": {
+        "ordem_operacoes": "coherence_map"
+      },
+      "nivel": 6,
+      "limiar": {
+        "estudo": "Knuth, Stephens, McNeil e Alibali, 2006",
+        "link": "https://doi.org/10.2307/30034852",
+        "porque": "Entender o sinal de igual como equivalência está associado ao sucesso em equações, mesmo controlando a habilidade"
+      },
+      "ponte": "Balança em equilíbrio; equações químicas balanceadas"
+    },
+    {
+      "id": "fracao_numero",
+      "nome": "Fração como número na reta",
+      "dominio": "F",
+      "descricao": "a/b é um número com lugar na reta, inclusive maior que 1",
+      "common_core": [
+        "3.NF.A"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "fracao_unitaria"
+      ],
+      "apoio_das_ligacoes": {
+        "fracao_unitaria": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 6,
+      "limiar": {
+        "estudo": "Siegler, Thompson e Schneider, 2011; Siegler e outros, 2012",
+        "link": "https://doi.org/10.1016/j.cogpsych.2011.03.001",
+        "porque": "Frações preveem álgebra 5 ou 6 anos depois; entender fração como número na reta é o centro da teoria"
+      },
+      "ponte": "Ritmo musical: semibreve, mínima, semínima"
+    },
+    {
+      "id": "variavel",
+      "nome": "Variável",
+      "dominio": "E",
+      "descricao": "Letra como número desconhecido ou como quantidade que varia",
+      "common_core": [
+        "6.EE.A",
+        "6.EE.B"
+      ],
+      "openstax": "PA 2",
+      "pre_requisitos": [
+        "linguagem_algebra"
+      ],
+      "apoio_das_ligacoes": {
+        "linguagem_algebra": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 7,
+      "limiar": {
+        "estudo": "Knuth, Alibali, McNeil e outros, 2011; Asquith, Stephens, Knuth e Alibali, 2007",
+        "link": "https://doi.org/10.1007/978-3-642-17735-4_15",
+        "porque": "Equivalência e variável são os dois conceitos centrais da álgebra escolar; professores subestimam a dificuldade"
+      },
+      "ponte": "Variáveis em programação e colunas em tabelas de dados"
+    },
+    {
+      "id": "fracoes_equivalentes",
+      "nome": "Frações equivalentes e comparação",
+      "dominio": "F",
+      "descricao": "Frações diferentes podem ser o mesmo número; comparar e ordenar",
+      "common_core": [
+        "4.NF.A"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "fracao_numero",
+        "fatores_multiplos"
+      ],
+      "apoio_das_ligacoes": {
+        "fracao_numero": "coherence_map",
+        "fatores_multiplos": "julgamento_a_revisar"
+      },
+      "nivel": 7,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "razao",
+      "nome": "Razão e taxa",
+      "dominio": "R",
+      "descricao": "Comparar duas quantidades multiplicativamente",
+      "common_core": [
+        "6.RP.A"
+      ],
+      "openstax": "PA 5",
+      "pre_requisitos": [
+        "fracao_numero",
+        "divisao"
+      ],
+      "apoio_das_ligacoes": {
+        "fracao_numero": "coherence_map",
+        "divisao": "coherence_map"
+      },
+      "nivel": 7,
+      "limiar": null,
+      "ponte": "Mistura de cores e concentração em química"
+    },
+    {
+      "id": "negativos",
+      "nome": "Números negativos e a reta numérica",
+      "dominio": "I",
+      "descricao": "Números abaixo de zero, oposto e valor absoluto",
+      "common_core": [
+        "6.NS.C"
+      ],
+      "openstax": "PA 3; EA 1",
+      "pre_requisitos": [
+        "fracao_numero"
+      ],
+      "apoio_das_ligacoes": {
+        "fracao_numero": "coherence_map"
+      },
+      "nivel": 7,
+      "limiar": {
+        "estudo": "Bofferding e Wessman-Enzinger, 2017; Bruno e Martinon, 1999",
+        "link": "https://doi.org/10.54870/1551-3440.1396",
+        "porque": "Passar dos naturais aos inteiros exige reorganizar o que se sabe sobre subtração e a reta numérica"
+      },
+      "ponte": null
+    },
+    {
+      "id": "eq_um_passo",
+      "nome": "Equações de um passo",
+      "dominio": "E",
+      "descricao": "Resolver mantendo a igualdade dos dois lados",
+      "common_core": [
+        "6.EE.B"
+      ],
+      "openstax": "PA 2; EA 2",
+      "pre_requisitos": [
+        "variavel",
+        "sinal_igual"
+      ],
+      "apoio_das_ligacoes": {
+        "variavel": "mesmo_grupo_coherence_map",
+        "sinal_igual": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 8,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "soma_fracoes",
+      "nome": "Somar e subtrair frações",
+      "dominio": "F",
+      "descricao": "Somar com denominador comum; números mistos",
+      "common_core": [
+        "4.NF.B",
+        "5.NF.A"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "fracoes_equivalentes"
+      ],
+      "apoio_das_ligacoes": {
+        "fracoes_equivalentes": "coherence_map"
+      },
+      "nivel": 8,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "mult_fracoes",
+      "nome": "Multiplicar frações",
+      "dominio": "F",
+      "descricao": "Fração de uma quantidade; área de retângulos com lados fracionários",
+      "common_core": [
+        "4.NF.B",
+        "5.NF.B"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "fracoes_equivalentes",
+        "mult_varios_digitos"
+      ],
+      "apoio_das_ligacoes": {
+        "fracoes_equivalentes": "coherence_map",
+        "mult_varios_digitos": "coherence_map"
+      },
+      "nivel": 8,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "decimais",
+      "nome": "Decimais e valor posicional decimal",
+      "dominio": "F",
+      "descricao": "Decimais como frações de denominador 10, 100...; comparar decimais",
+      "common_core": [
+        "4.NF.C",
+        "5.NBT.A"
+      ],
+      "openstax": "PA 5",
+      "pre_requisitos": [
+        "valor_posicional",
+        "fracoes_equivalentes"
+      ],
+      "apoio_das_ligacoes": {
+        "valor_posicional": "coherence_map",
+        "fracoes_equivalentes": "coherence_map"
+      },
+      "nivel": 8,
+      "limiar": {
+        "estudo": "Rittle-Johnson, Siegler e Alibali, 2001; Lortie-Forgues, Tian e Siegler, 2015",
+        "link": "https://doi.org/10.1037/0022-0663.93.2.346",
+        "porque": "Entender decimais exige ligar conceito e procedimento; aritmética de frações e decimais é notoriamente difícil"
+      },
+      "ponte": null
+    },
+    {
+      "id": "soma_inteiros",
+      "nome": "Somar e subtrair inteiros",
+      "dominio": "I",
+      "descricao": "Soma e subtração com sinais, explicadas na reta",
+      "common_core": [
+        "7.NS.A"
+      ],
+      "openstax": "PA 3; EA 1",
+      "pre_requisitos": [
+        "negativos",
+        "adicao_subtracao"
+      ],
+      "apoio_das_ligacoes": {
+        "negativos": "coherence_map",
+        "adicao_subtracao": "coherence_map"
+      },
+      "nivel": 8,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "plano_cartesiano",
+      "nome": "Plano cartesiano",
+      "dominio": "I",
+      "descricao": "Localizar pontos nos quatro quadrantes",
+      "common_core": [
+        "5.G.A",
+        "6.NS.C"
+      ],
+      "openstax": "PA 11; EA 4",
+      "pre_requisitos": [
+        "negativos"
+      ],
+      "apoio_das_ligacoes": {
+        "negativos": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 8,
+      "limiar": null,
+      "ponte": "Mapas, latitude e longitude"
+    },
+    {
+      "id": "inequacoes",
+      "nome": "Inequações",
+      "dominio": "E",
+      "descricao": "Desigualdades com variável e suas soluções na reta",
+      "common_core": [
+        "6.EE.B",
+        "7.EE.B"
+      ],
+      "openstax": "EA 2",
+      "pre_requisitos": [
+        "eq_um_passo",
+        "negativos"
+      ],
+      "apoio_das_ligacoes": {
+        "eq_um_passo": "mesmo_grupo_coherence_map",
+        "negativos": "coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "div_fracoes",
+      "nome": "Dividir frações",
+      "dominio": "F",
+      "descricao": "Quantas vezes uma fração cabe na outra; divisão como inversa da multiplicação",
+      "common_core": [
+        "5.NF.B",
+        "6.NS.A"
+      ],
+      "openstax": "PA 4",
+      "pre_requisitos": [
+        "mult_fracoes",
+        "divisao"
+      ],
+      "apoio_das_ligacoes": {
+        "mult_fracoes": "mesmo_grupo_coherence_map",
+        "divisao": "coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "area_volume",
+      "nome": "Área de figuras e volume",
+      "dominio": "G",
+      "descricao": "Triângulos, polígonos, prismas; fórmulas como expressões",
+      "common_core": [
+        "6.G.A",
+        "7.G.B"
+      ],
+      "openstax": "PA 9",
+      "pre_requisitos": [
+        "area",
+        "mult_fracoes"
+      ],
+      "apoio_das_ligacoes": {
+        "area": "coherence_map",
+        "mult_fracoes": "coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "operacoes_decimais",
+      "nome": "Operações com decimais",
+      "dominio": "F",
+      "descricao": "Somar, subtrair, multiplicar e dividir decimais",
+      "common_core": [
+        "5.NBT.B",
+        "6.NS.B"
+      ],
+      "openstax": "PA 5",
+      "pre_requisitos": [
+        "decimais",
+        "divisao_longa"
+      ],
+      "apoio_das_ligacoes": {
+        "decimais": "coherence_map",
+        "divisao_longa": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "mult_inteiros",
+      "nome": "Multiplicar e dividir inteiros",
+      "dominio": "I",
+      "descricao": "Regras de sinal justificadas pela distributiva",
+      "common_core": [
+        "7.NS.A"
+      ],
+      "openstax": "PA 3; EA 1",
+      "pre_requisitos": [
+        "soma_inteiros",
+        "divisao",
+        "propriedades"
+      ],
+      "apoio_das_ligacoes": {
+        "soma_inteiros": "mesmo_grupo_coherence_map",
+        "divisao": "coherence_map",
+        "propriedades": "coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "funcao",
+      "nome": "Conceito de função",
+      "dominio": "FN",
+      "descricao": "Regra que associa a cada entrada uma única saída",
+      "common_core": [
+        "8.F.A",
+        "F-IF.A"
+      ],
+      "openstax": null,
+      "pre_requisitos": [
+        "variavel",
+        "plano_cartesiano"
+      ],
+      "apoio_das_ligacoes": {
+        "variavel": "julgamento_a_revisar",
+        "plano_cartesiano": "coherence_map"
+      },
+      "nivel": 9,
+      "limiar": null,
+      "ponte": "Funções em programação: entrada, regra, saída"
+    },
+    {
+      "id": "taxa_unitaria",
+      "nome": "Taxa unitária e tabelas de razões",
+      "dominio": "R",
+      "descricao": "Quanto por 1; tabelas e retas duplas",
+      "common_core": [
+        "6.RP.A"
+      ],
+      "openstax": "PA 5",
+      "pre_requisitos": [
+        "razao",
+        "operacoes_decimais"
+      ],
+      "apoio_das_ligacoes": {
+        "razao": "mesmo_grupo_coherence_map",
+        "operacoes_decimais": "julgamento_a_revisar"
+      },
+      "nivel": 10,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "racionais",
+      "nome": "Operações com números racionais",
+      "dominio": "I",
+      "descricao": "As quatro operações com frações e decimais positivos e negativos",
+      "common_core": [
+        "7.NS.A"
+      ],
+      "openstax": "PA 7; EA 1",
+      "pre_requisitos": [
+        "mult_inteiros",
+        "div_fracoes",
+        "operacoes_decimais"
+      ],
+      "apoio_das_ligacoes": {
+        "mult_inteiros": "mesmo_grupo_coherence_map",
+        "div_fracoes": "coherence_map",
+        "operacoes_decimais": "coherence_map"
+      },
+      "nivel": 10,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "potencias",
+      "nome": "Potências e raiz quadrada",
+      "dominio": "I",
+      "descricao": "Potências como multiplicação repetida; quadrados e raízes",
+      "common_core": [
+        "6.EE.A",
+        "8.EE.A"
+      ],
+      "openstax": "PA 10; EA 6",
+      "pre_requisitos": [
+        "ordem_operacoes",
+        "mult_inteiros"
+      ],
+      "apoio_das_ligacoes": {
+        "ordem_operacoes": "coherence_map",
+        "mult_inteiros": "coherence_map"
+      },
+      "nivel": 10,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "expr_equivalentes",
+      "nome": "Expressões equivalentes",
+      "dominio": "E",
+      "descricao": "Distributiva, combinar termos semelhantes, fatorar números",
+      "common_core": [
+        "6.EE.A",
+        "7.EE.A"
+      ],
+      "openstax": "PA 2; EA 1",
+      "pre_requisitos": [
+        "variavel",
+        "propriedades",
+        "mult_inteiros"
+      ],
+      "apoio_das_ligacoes": {
+        "variavel": "mesmo_grupo_coherence_map",
+        "propriedades": "coherence_map",
+        "mult_inteiros": "julgamento_a_revisar"
+      },
+      "nivel": 10,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "porcentagem",
+      "nome": "Porcentagem",
+      "dominio": "R",
+      "descricao": "Porcentagem como razão por 100; aumentos e descontos",
+      "common_core": [
+        "6.RP.A",
+        "7.RP.A"
+      ],
+      "openstax": "PA 6",
+      "pre_requisitos": [
+        "taxa_unitaria",
+        "decimais"
+      ],
+      "apoio_das_ligacoes": {
+        "taxa_unitaria": "mesmo_grupo_coherence_map",
+        "decimais": "coherence_map"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": "Juros, inflação e descontos (economia)"
+    },
+    {
+      "id": "proporcionalidade",
+      "nome": "Relações proporcionais (y = kx)",
+      "dominio": "R",
+      "descricao": "Reconhecer e usar a constante de proporcionalidade em tabelas, gráficos e equações",
+      "common_core": [
+        "7.RP.A"
+      ],
+      "openstax": "PA 6",
+      "pre_requisitos": [
+        "taxa_unitaria",
+        "mult_fracoes"
+      ],
+      "apoio_das_ligacoes": {
+        "taxa_unitaria": "coherence_map",
+        "mult_fracoes": "coherence_map"
+      },
+      "nivel": 11,
+      "limiar": {
+        "estudo": "Tourniaire e Pulos, 1985; Hoyles, Noss e Pozzi, 2001",
+        "link": "https://doi.org/10.1007/bf02400937",
+        "porque": "Raciocínio proporcional é um marco do desenvolvimento e aparece em práticas profissionais como dosagem de remédios"
+      },
+      "ponte": "Dosagem de remédios (Hoyles e outros, 2001), receitas e escala de mapas"
+    },
+    {
+      "id": "unidades",
+      "nome": "Grandezas e unidades",
+      "dominio": "G",
+      "descricao": "Converter unidades e raciocinar com elas",
+      "common_core": [
+        "5.MD.A",
+        "N-Q.A"
+      ],
+      "openstax": "EA 1",
+      "pre_requisitos": [
+        "taxa_unitaria"
+      ],
+      "apoio_das_ligacoes": {
+        "taxa_unitaria": "coherence_map"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "irracionais",
+      "nome": "Números irracionais e os reais",
+      "dominio": "I",
+      "descricao": "Números que não são frações; aproximações de raízes",
+      "common_core": [
+        "8.NS.A"
+      ],
+      "openstax": "EA 1",
+      "pre_requisitos": [
+        "decimais",
+        "potencias"
+      ],
+      "apoio_das_ligacoes": {
+        "decimais": "coherence_map",
+        "potencias": "julgamento_a_revisar"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "pitagoras",
+      "nome": "Teorema de Pitágoras",
+      "dominio": "G",
+      "descricao": "Relação entre os lados do triângulo retângulo",
+      "common_core": [
+        "8.G.B"
+      ],
+      "openstax": "PA 9",
+      "pre_requisitos": [
+        "area_volume",
+        "potencias"
+      ],
+      "apoio_das_ligacoes": {
+        "area_volume": "coherence_map",
+        "potencias": "julgamento_a_revisar"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": "Distância em mapas e em gráficos"
+    },
+    {
+      "id": "regras_expoentes",
+      "nome": "Propriedades dos expoentes",
+      "dominio": "P",
+      "descricao": "Produto, quociente e potência de potências; expoentes negativos e zero",
+      "common_core": [
+        "8.EE.A",
+        "N-RN.A"
+      ],
+      "openstax": "EA 6",
+      "pre_requisitos": [
+        "potencias",
+        "mult_inteiros"
+      ],
+      "apoio_das_ligacoes": {
+        "potencias": "mesmo_grupo_coherence_map",
+        "mult_inteiros": "coherence_map"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "eq_varios_passos",
+      "nome": "Equações lineares de vários passos",
+      "dominio": "E",
+      "descricao": "Variável dos dois lados, parênteses, frações",
+      "common_core": [
+        "7.EE.B",
+        "8.EE.C",
+        "A-REI.B"
+      ],
+      "openstax": "PA 8; EA 2",
+      "pre_requisitos": [
+        "expr_equivalentes",
+        "eq_um_passo",
+        "racionais"
+      ],
+      "apoio_das_ligacoes": {
+        "expr_equivalentes": "coherence_map",
+        "eq_um_passo": "coherence_map",
+        "racionais": "coherence_map"
+      },
+      "nivel": 11,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "radicais",
+      "nome": "Raízes e radicais",
+      "dominio": "P",
+      "descricao": "Simplificar e operar com raízes",
+      "common_core": [
+        "8.EE.A",
+        "N-RN.B"
+      ],
+      "openstax": "EA 9",
+      "pre_requisitos": [
+        "potencias",
+        "irracionais"
+      ],
+      "apoio_das_ligacoes": {
+        "potencias": "mesmo_grupo_coherence_map",
+        "irracionais": "coherence_map"
+      },
+      "nivel": 12,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "polinomios",
+      "nome": "Operações com polinômios",
+      "dominio": "P",
+      "descricao": "Somar, subtrair e multiplicar polinômios",
+      "common_core": [
+        "A-APR.A"
+      ],
+      "openstax": "PA 10; EA 6",
+      "pre_requisitos": [
+        "expr_equivalentes",
+        "regras_expoentes"
+      ],
+      "apoio_das_ligacoes": {
+        "expr_equivalentes": "coherence_map",
+        "regras_expoentes": "coherence_map"
+      },
+      "nivel": 12,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "formulas",
+      "nome": "Resolver fórmulas",
+      "dominio": "E",
+      "descricao": "Isolar uma variável numa fórmula",
+      "common_core": [
+        "A-CED.A"
+      ],
+      "openstax": "EA 2",
+      "pre_requisitos": [
+        "eq_varios_passos"
+      ],
+      "apoio_das_ligacoes": {
+        "eq_varios_passos": "coherence_map"
+      },
+      "nivel": 12,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "modelagem",
+      "nome": "Transformar problemas em equações",
+      "dominio": "E",
+      "descricao": "Escrever e resolver equações que descrevem situações",
+      "common_core": [
+        "7.EE.B",
+        "A-CED.A"
+      ],
+      "openstax": "PA 9; EA 3",
+      "pre_requisitos": [
+        "eq_varios_passos",
+        "porcentagem"
+      ],
+      "apoio_das_ligacoes": {
+        "eq_varios_passos": "mesmo_grupo_coherence_map",
+        "porcentagem": "coherence_map"
+      },
+      "nivel": 12,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "grafico_linear",
+      "nome": "Gráfico de equações lineares",
+      "dominio": "FN",
+      "descricao": "Tabela, gráfico e equação da mesma relação",
+      "common_core": [
+        "8.EE.B",
+        "F-IF.C"
+      ],
+      "openstax": "EA 4",
+      "pre_requisitos": [
+        "plano_cartesiano",
+        "eq_varios_passos"
+      ],
+      "apoio_das_ligacoes": {
+        "plano_cartesiano": "coherence_map",
+        "eq_varios_passos": "coherence_map"
+      },
+      "nivel": 12,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "fatoracao",
+      "nome": "Fatoração",
+      "dominio": "P",
+      "descricao": "Fator comum, diferença de quadrados e trinômios",
+      "common_core": [
+        "A-SSE.A",
+        "A-SSE.B"
+      ],
+      "openstax": "EA 7",
+      "pre_requisitos": [
+        "polinomios",
+        "fatores_multiplos"
+      ],
+      "apoio_das_ligacoes": {
+        "polinomios": "coherence_map",
+        "fatores_multiplos": "coherence_map"
+      },
+      "nivel": 13,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "inclinacao",
+      "nome": "Inclinação como taxa de variação",
+      "dominio": "FN",
+      "descricao": "Quanto y muda quando x aumenta 1",
+      "common_core": [
+        "8.EE.B",
+        "8.F.B"
+      ],
+      "openstax": "EA 4",
+      "pre_requisitos": [
+        "grafico_linear",
+        "proporcionalidade"
+      ],
+      "apoio_das_ligacoes": {
+        "grafico_linear": "mesmo_grupo_coherence_map",
+        "proporcionalidade": "coherence_map"
+      },
+      "nivel": 13,
+      "limiar": null,
+      "ponte": "Velocidade como variação da posição no tempo (física)"
+    },
+    {
+      "id": "eq_segundo_grau",
+      "nome": "Equações do 2º grau (introdução)",
+      "dominio": "P",
+      "descricao": "Resolver por fatoração e entender as soluções",
+      "common_core": [
+        "A-REI.B",
+        "A-SSE.B"
+      ],
+      "openstax": "EA 10",
+      "pre_requisitos": [
+        "fatoracao",
+        "eq_varios_passos"
+      ],
+      "apoio_das_ligacoes": {
+        "fatoracao": "mesmo_grupo_coherence_map",
+        "eq_varios_passos": "mesmo_grupo_coherence_map"
+      },
+      "nivel": 14,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "reta",
+      "nome": "Equação da reta (y = mx + b)",
+      "dominio": "FN",
+      "descricao": "Construir e interpretar a equação de uma reta",
+      "common_core": [
+        "8.F.B",
+        "F-LE.A"
+      ],
+      "openstax": "EA 4",
+      "pre_requisitos": [
+        "inclinacao",
+        "funcao"
+      ],
+      "apoio_das_ligacoes": {
+        "inclinacao": "mesmo_grupo_coherence_map",
+        "funcao": "coherence_map"
+      },
+      "nivel": 14,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "interpretar_funcoes",
+      "nome": "Interpretar funções em contexto",
+      "dominio": "FN",
+      "descricao": "Ler o que gráficos e fórmulas dizem sobre uma situação",
+      "common_core": [
+        "F-IF.B",
+        "F-LE.B"
+      ],
+      "openstax": null,
+      "pre_requisitos": [
+        "reta"
+      ],
+      "apoio_das_ligacoes": {
+        "reta": "coherence_map"
+      },
+      "nivel": 15,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "sistemas",
+      "nome": "Sistemas de equações lineares",
+      "dominio": "E",
+      "descricao": "Duas equações, duas incógnitas: gráfico, substituição, eliminação",
+      "common_core": [
+        "8.EE.C",
+        "A-REI.C"
+      ],
+      "openstax": "EA 5",
+      "pre_requisitos": [
+        "eq_varios_passos",
+        "reta"
+      ],
+      "apoio_das_ligacoes": {
+        "eq_varios_passos": "mesmo_grupo_coherence_map",
+        "reta": "julgamento_a_revisar"
+      },
+      "nivel": 15,
+      "limiar": null,
+      "ponte": null
+    },
+    {
+      "id": "linear_exponencial",
+      "nome": "Crescimento linear e exponencial",
+      "dominio": "FN",
+      "descricao": "Somar sempre o mesmo valor ou multiplicar sempre pelo mesmo fator",
+      "common_core": [
+        "F-LE.A"
+      ],
+      "openstax": null,
+      "pre_requisitos": [
+        "reta",
+        "potencias",
+        "porcentagem"
+      ],
+      "apoio_das_ligacoes": {
+        "reta": "mesmo_grupo_coherence_map",
+        "potencias": "coherence_map",
+        "porcentagem": "coherence_map"
+      },
+      "nivel": 15,
+      "limiar": null,
+      "ponte": "Juros compostos, crescimento populacional e epidemias"
+    }
+  ],
+  "diagnostico": {
+    "regra": "Começar pela pergunta 7 (proporção). Acertou: seguir para 10, 11, 12, 13 e 14. Errou: descer para 6, 5, 3, 2 e 1. Cada erro marca o conceito como em_estudo e o cartógrafo testa os pré-requisitos dele com perguntas novas.",
+    "perguntas": [
+      {
+        "ordem": 1,
+        "conceito": "valor_posicional",
+        "pergunta": "No número 4.705, quanto vale o algarismo 7?"
+      },
+      {
+        "ordem": 2,
+        "conceito": "divisao",
+        "pergunta": "Três pizzas são divididas igualmente entre 4 pessoas. Quanto cada uma recebe? Explique."
+      },
+      {
+        "ordem": 3,
+        "conceito": "fracao_numero",
+        "pergunta": "Numa reta de 0 a 2, onde fica 5/4? É maior ou menor que 1?"
+      },
+      {
+        "ordem": 4,
+        "conceito": "fracoes_equivalentes",
+        "pergunta": "O que é maior: 3/8 ou 2/5? Como você sabe?"
+      },
+      {
+        "ordem": 5,
+        "conceito": "decimais",
+        "pergunta": "O que é maior: 0,45 ou 0,5?"
+      },
+      {
+        "ordem": 6,
+        "conceito": "div_fracoes",
+        "pergunta": "Quantos pedaços de 3/4 de metro cabem em 6 metros?"
+      },
+      {
+        "ordem": 7,
+        "conceito": "proporcionalidade",
+        "pergunta": "Uma receita usa 2 xícaras de farinha para 3 de leite. Com 7,5 xícaras de leite, quanta farinha?"
+      },
+      {
+        "ordem": 8,
+        "conceito": "porcentagem",
+        "pergunta": "Um preço de R$ 80 sobe 25% e depois cai 25%. Quanto fica?"
+      },
+      {
+        "ordem": 9,
+        "conceito": "soma_inteiros",
+        "pergunta": "Quanto é −3 − (−8)? Mostre na reta numérica."
+      },
+      {
+        "ordem": 10,
+        "conceito": "sinal_igual",
+        "pergunta": "Que número completa a igualdade: 8 + 4 = __ + 5?"
+      },
+      {
+        "ordem": 11,
+        "conceito": "variavel",
+        "pergunta": "O que é maior: 2n ou n + 2? Explique."
+      },
+      {
+        "ordem": 12,
+        "conceito": "eq_varios_passos",
+        "pergunta": "Resolva 3(x − 2) = 2x + 5."
+      },
+      {
+        "ordem": 13,
+        "conceito": "reta",
+        "pergunta": "Um táxi cobra R$ 5 fixos mais R$ 3 por km. Escreva a regra. O que o 3 representa no gráfico?"
+      },
+      {
+        "ordem": 14,
+        "conceito": "regras_expoentes",
+        "pergunta": "Simplifique 2³ · 2⁴ e explique por que funciona."
+      }
+    ]
+  },
+  "nota": "Estado do aluno NAO fica aqui: e calculado de eventos.jsonl por 90-Sistema/scripts/estado.py."
+}

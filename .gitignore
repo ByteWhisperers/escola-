@@ -1,0 +1,11 @@
+# Obsidian: configuracoes locais da janela
+.obsidian/workspace*.json
+.obsidian/cache
+# Python
+__pycache__/
+*.pyc
+.venv/
+# credenciais nunca vao para o Git
+.env
+*.key
+.openalex_key

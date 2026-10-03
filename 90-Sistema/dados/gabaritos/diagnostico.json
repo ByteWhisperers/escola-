@@ -1,0 +1,103 @@
+{
+  "regra": "Começar pela pergunta 7 (proporção). Acertou: seguir para 10, 11, 12, 13 e 14. Errou: descer para 6, 5, 3, 2 e 1. Cada erro marca o conceito como em_estudo e o cartógrafo testa os pré-requisitos dele com perguntas novas.",
+  "perguntas": [
+    {
+      "ordem": 1,
+      "conceito": "valor_posicional",
+      "pergunta": "No número 4.705, quanto vale o algarismo 7?",
+      "resposta": "700",
+      "erro_comum": "Responder 7: não ligar o algarismo à posição"
+    },
+    {
+      "ordem": 2,
+      "conceito": "divisao",
+      "pergunta": "Três pizzas são divididas igualmente entre 4 pessoas. Quanto cada uma recebe? Explique.",
+      "resposta": "3/4 de pizza",
+      "erro_comum": "Dizer que não dá, ou responder 4/3: divisão só como 'maior por menor'"
+    },
+    {
+      "ordem": 3,
+      "conceito": "fracao_numero",
+      "pergunta": "Numa reta de 0 a 2, onde fica 5/4? É maior ou menor que 1?",
+      "resposta": "Entre 1 e 1,5 (1,25); maior que 1",
+      "erro_comum": "Achar que toda fração é menor que 1"
+    },
+    {
+      "ordem": 4,
+      "conceito": "fracoes_equivalentes",
+      "pergunta": "O que é maior: 3/8 ou 2/5? Como você sabe?",
+      "resposta": "2/5 (16/40 contra 15/40)",
+      "erro_comum": "Comparar numeradores ou denominadores separadamente"
+    },
+    {
+      "ordem": 5,
+      "conceito": "decimais",
+      "pergunta": "O que é maior: 0,45 ou 0,5?",
+      "resposta": "0,5",
+      "erro_comum": "Escolher 0,45 porque 45 é maior que 5"
+    },
+    {
+      "ordem": 6,
+      "conceito": "div_fracoes",
+      "pergunta": "Quantos pedaços de 3/4 de metro cabem em 6 metros?",
+      "resposta": "8",
+      "erro_comum": "Multiplicar 6 por 3/4 (4,5)"
+    },
+    {
+      "ordem": 7,
+      "conceito": "proporcionalidade",
+      "pergunta": "Uma receita usa 2 xícaras de farinha para 3 de leite. Com 7,5 xícaras de leite, quanta farinha?",
+      "resposta": "5 xícaras",
+      "erro_comum": "Responder 6,5: somar a diferença em vez de multiplicar"
+    },
+    {
+      "ordem": 8,
+      "conceito": "porcentagem",
+      "pergunta": "Um preço de R$ 80 sobe 25% e depois cai 25%. Quanto fica?",
+      "resposta": "R$ 75",
+      "erro_comum": "Responder R$ 80: tratar as porcentagens como se tivessem a mesma base"
+    },
+    {
+      "ordem": 9,
+      "conceito": "soma_inteiros",
+      "pergunta": "Quanto é −3 − (−8)? Mostre na reta numérica.",
+      "resposta": "5",
+      "erro_comum": "Responder −11: juntar os sinais"
+    },
+    {
+      "ordem": 10,
+      "conceito": "sinal_igual",
+      "pergunta": "Que número completa a igualdade: 8 + 4 = __ + 5?",
+      "resposta": "7",
+      "erro_comum": "Responder 12: ler '=' como 'dá o resultado'"
+    },
+    {
+      "ordem": 11,
+      "conceito": "variavel",
+      "pergunta": "O que é maior: 2n ou n + 2? Explique.",
+      "resposta": "Depende de n: 2n é maior se n > 2, iguais se n = 2, menor se n < 2",
+      "erro_comum": "Dizer que 2n é sempre maior: letra como número fixo"
+    },
+    {
+      "ordem": 12,
+      "conceito": "eq_varios_passos",
+      "pergunta": "Resolva 3(x − 2) = 2x + 5.",
+      "resposta": "x = 11",
+      "erro_comum": "Errar a distributiva (3x − 2) ou o sinal ao mudar de lado"
+    },
+    {
+      "ordem": 13,
+      "conceito": "reta",
+      "pergunta": "Um táxi cobra R$ 5 fixos mais R$ 3 por km. Escreva a regra. O que o 3 representa no gráfico?",
+      "resposta": "y = 3x + 5; o 3 é a inclinação (quanto sobe por km)",
+      "erro_comum": "Confundir a parte fixa com a taxa por km"
+    },
+    {
+      "ordem": 14,
+      "conceito": "regras_expoentes",
+      "pergunta": "Simplifique 2³ · 2⁴ e explique por que funciona.",
+      "resposta": "2⁷ = 128, porque são 3 + 4 fatores iguais a 2",
+      "erro_comum": "Multiplicar os expoentes (2¹²) ou as bases (4⁷)"
+    }
+  ]
+}
