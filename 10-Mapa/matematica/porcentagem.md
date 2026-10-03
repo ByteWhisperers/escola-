@@ -4,14 +4,14 @@ nome: Porcentagem
 dominio: "Razão, proporção e porcentagem"
 pre_requisitos: [taxa_unitaria, decimais]
 limiar: false
-estado: bloqueado
-etapa:
+estado: dominado
+etapa: dialetica
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
 explicou: false
-dominado_em:
-proxima_revisao:
-intervalo_dias:
+dominado_em: 2026-10-03
+proxima_revisao: 2026-10-04
+intervalo_dias: 1
 inferido_no_diagnostico: false
 openstax: PA 6
 common_core: [6.RP.A, 7.RP.A]

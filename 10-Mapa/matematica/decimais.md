@@ -4,15 +4,15 @@ nome: Decimais e valor posicional decimal
 dominio: Frações e decimais
 pre_requisitos: [valor_posicional, fracoes_equivalentes]
 limiar: true
-estado: disponivel
-etapa:
+estado: dominado
+etapa: dialetica
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
 explicou: false
-dominado_em:
-proxima_revisao:
-intervalo_dias:
-inferido_no_diagnostico: false
+dominado_em: 2026-10-03
+proxima_revisao: 2026-10-18
+intervalo_dias: 1
+inferido_no_diagnostico: true
 openstax: PA 5
 common_core: [4.NF.C, 5.NBT.A]
 ---

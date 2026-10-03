@@ -4,7 +4,7 @@ nome: Grandezas e unidades
 dominio: Geometria e medida (apoio)
 pre_requisitos: [taxa_unitaria]
 limiar: false
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0

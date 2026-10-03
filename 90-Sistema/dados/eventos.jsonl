@@ -1,2 +1,3 @@
 {"quando": "2026-10-03T09:47", "sessao": "2026-10-03-diag", "conceito": "proporcionalidade", "tipo": "diagnostico", "resultado": "errado", "ajuda": "sem", "agente": "diagnostico", "questao": "diag-7"}
 {"quando": "2026-10-03T09:55", "sessao": "2026-10-03-diag", "conceito": "div_fracoes", "tipo": "diagnostico", "resultado": "certo", "ajuda": "sem", "agente": "diagnostico", "questao": "diag-6"}
+{"quando": "2026-10-03T09:59", "sessao": "2026-10-03-diag", "conceito": "porcentagem", "tipo": "diagnostico", "resultado": "certo", "ajuda": "sem", "agente": "diagnostico", "questao": "diag-8"}

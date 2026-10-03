@@ -4,7 +4,7 @@ nome: Relações proporcionais (y = kx)
 dominio: "Razão, proporção e porcentagem"
 pre_requisitos: [taxa_unitaria, mult_fracoes]
 limiar: true
-estado: bloqueado
+estado: disponivel
 etapa:
 acertos_sem_ajuda: 0
 dias_com_acerto: 0
